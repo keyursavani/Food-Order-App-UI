@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recommendations_list">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/location_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="75dp"
+        android:layout_height="24dp"
+        android:text="Café Jack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/menu_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:tabGravity="fill"
+        app:tabIndicator="@drawable/tab_design"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:text="All Dishes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dessert" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image1" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:text="Avocado and Egg Toast"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$12.30"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image4" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:text="Mix Salad with beans"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$10.40"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image2" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="135dp"
+                    android:text="Energy Power Bowl"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$9.40"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image6" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:text="Avocado and Egg Mixture"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$15.40"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image3" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:text="Vegetable Salad"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$14.10"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="152dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/image5" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="171dp"
+                    android:src="@drawable/star2" />
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:text="Chicken Salad"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="8dp"
+                    android:text="$12.30"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="170dp"
+                    android:text="4.9 (120 reviews)"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+    </LinearLayout> -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drink_fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="327dp"
+        android:layout_height="462dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="246dp"
+            android:layout_height="246dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/image1" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="300dp"
+            android:text="Avocado and Egg Toast"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            android:text="$12.30"
+            android:textColor="@color/orange"
+            android:textSize="24dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="52dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="20dp"
+                android:text="5.0"
+                android:textSize="14dp" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
